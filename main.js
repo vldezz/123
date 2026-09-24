@@ -2,14 +2,14 @@
 // 1. DAFTAR VIDEO
 // ==========================================
 const daftarVideo = {
-    "1": "https://cdn2.videy.co/ZwdCN9621.mp4",
-    "2": "https://cdn2.videy.co/VNDBFNBT1.mp4",
-    "3": "https://cdn2.videy.co/lZBK9W3A1.mp4",
-    "4": "https://cdn2.videy.co/pFDi1M5m1.mp4",
-    "5": "https://cdn2.videy.co/BjVsmoPs1.mp4",
-    "6": "https://cdn.videy.co/8cWz7SRK1.mp4",
-    "7": "https://cdn2.videy.co/AAovM0bj1.mp4",
-    "8": "https://cdn2.videy.co/CU550Zof1.mp4",
+    "1": "https://cdn.aceimg.com/2XXFSP9ER.mp4",
+    "2": "https://cdn.aceimg.com/2pvlKs9jb.mp4",
+    "3": "https://cdn.aceimg.com/tlfdcBfC1.mp4",
+    "4": "https://cdn.aceimg.com/TLte6usxG.mp4",
+    "5": "https://cdn.aceimg.com/oGOtkG2yq.mp4",
+    "6": "https://cdn.aceimg.com/q5cIaCehH.mp4",
+    "7": "https://cdn2.videy.co/5jkNUzJb1.mp4",
+    "8": "https://cdn.aceimg.com/hD51whQpX.mp4",
     "9": "https://cdn2.videy.co/mRZ1Lm0Y1.mp4",
     "10": "https://cdn2.videy.co/rTERwuzM1.mp4",
     "11": "https://cdn2.videy.co/xn4L8uRk1.mp4",
