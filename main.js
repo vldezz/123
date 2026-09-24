@@ -49,7 +49,7 @@ if (idVideoDicari && daftarVideo[idVideoDicari]) {
 
     // Ganti dengan tujuan yang sesuai
     const linkTujuan1 = "https://s.shopee.co.id/1VynwISeTQ";
-    const linkTujuan2 = "https://hai8g.com/4/11685857";
+    const linkTujuan2 = "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9";
     const linkTujuan3 = "https://demolishwrestconclusions.com/diw3sapmi1?key=40a4713aac8d0bad2226bdabed9a8037";
 
 
@@ -154,7 +154,7 @@ if (shareBtn) {
     shareBtn.onclick = () => {
 
         window.open(
-            "https://whatsapp.com/channel/0029VbC83luInlqZ5Nz2qY3a",
+            "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9",
             "_blank"
         );
 
@@ -170,7 +170,7 @@ if (shareBtn) {
 function joinWhatsAppGroup() {
 
     window.open(
-        "https://whatsapp.com/channel/0029VbBpeya5vKA1QhYaiq1W",
+        "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9",
         "_blank"
     );
 
@@ -184,7 +184,7 @@ function joinWhatsAppGroup() {
 function openFacebookPage() {
 
     window.open(
-        "https://www.facebook.com/share/1B5kX2HgqC/",
+        "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9",
         "_blank"
     );
 
