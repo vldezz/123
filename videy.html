@@ -14,10 +14,9 @@
 
   <div class="video-wrapper">
 
-    <!-- PLAY SAJA (GANTI VIDEO) -->
-    <button id="startBtn">
-        <span>▶</span>
-    </button>
+    <video id="video" controls playsinline>
+        <source src=".mp4" type="video/mp4">
+    </video>
 
     <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
         <img src="whatsapp.png">
@@ -31,22 +30,10 @@
 
   </div>
 
-  <button class="share-btn" id="shareBtn">📁 Full Video Viral</button>
+  <button class="share-btn" id="shareBtn">Bagikan</button>
 
 </main>
 
-<script>
-document.getElementById("startBtn").addEventListener("click", () => {
-
-    // TAB BARU → VIDEO ASLI
-    window.open("index2.html", "_blank");
-
-    // TAB LAMA → REDIRECT
-    window.location.href = "https://omg10.com/4/11692894";
-
-});
-</script>
 <script src="main.js"></script>
-
 </body>
 </html>

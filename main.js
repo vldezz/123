@@ -1,150 +1,72 @@
 // ==========================================
 // 1. DAFTAR VIDEO
 // ==========================================
-const daftarVideo = {
-    "1": "https://cdn.aceimg.com/2XXFSP9ER.mp4",
-    "2": "https://cdn.aceimg.com/2pvlKs9jb.mp4",
-    "3": "https://cdn.aceimg.com/tlfdcBfC1.mp4",
-    "4": "https://cdn.aceimg.com/TLte6usxG.mp4",
-    "5": "https://cdn.aceimg.com/oGOtkG2yq.mp4",
-    "6": "https://cdn.aceimg.com/q5cIaCehH.mp4",
-    "7": "https://cdn2.videy.co/5jkNUzJb1.mp4",
-    "8": "https://cdn.aceimg.com/hD51whQpX.mp4",
-    "9": "https://cdn2.videy.co/mRZ1Lm0Y1.mp4",
-    "10": "https://cdn2.videy.co/rTERwuzM1.mp4",
-    "11": "https://cdn2.videy.co/xn4L8uRk1.mp4",
-    "12": "https://cdn2.videy.co/s2yazRB51.mp4",
-    "13": "https://cdn2.videy.co/KQPf4Otj1.mp4",
-    "14": "https://cdn2.videy.co/TD8eGo2X1.mp4"
-};
+
+const daftarVideo = [
+"https://cdn2.videy.co/5jkNUzJb1.mp4",
+"https://cdn2.videy.co/CU550Zof1.mp4?fbclid=IwSU9FWAUY-nVwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHqf3Qionr6UY7gbBcYQXcl9SBvz7E75XZPJACYTXZTd2dwtp8CinrTjdcmrf_aem_S5zDJQHdUwt-eaaLl_p-SA",
+"https://cdn2.videy.co/lZBK9W3A1.mp4?fbclid=IwSU9FWAUY-mdwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtTxuBU7XH2HHEVloXy_sO8QgMCvzZCnW4N2XSNFKyflt5cyyCBvI1ZDYEOH_aem_2vw3UywlqcbCaexuN_HKvg",
+"https://cdn2.videy.co/xn4L8uRk1.mp4?fbclid=IwSU9FWAUY-ldwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHqf3Qionr6UY7gbBcYQXcl9SBvz7E75XZPJACYTXZTd2dwtp8CinrTjdcmrf_aem_S5zDJQHdUwt-eaaLl_p-SA",
+"https://cdn2.videy.co/TD8eGo2X1.mp4?fbclid=IwSU9FWAUY-klwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHqf3Qionr6UY7gbBcYQXcl9SBvz7E75XZPJACYTXZTd2dwtp8CinrTjdcmrf_aem_S5zDJQHdUwt-eaaLl_p-SA",
+"https://cdn2.videy.co/s2yazRB51.mp4?fbclid=IwSU9FWAUY-jpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHo996sHmB5vafWo2wALp9r_FVnmwiAkiwdcRJujx_f46kjBw9RnSDXZPt70x_aem_Cpjx1-lXagqrmrxYMm7Mbw",
+"https://cdn2.videy.co/pFDi1M5m1.mp4?fbclid=IwSU9FWAUY-hJwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHibUzlNXwmawxJSlcYKT6qhyfQ6BBiMazN2Ues4yA6uCjwS7UEBYJ7ZWnaKv_aem_pYRjzoMdBJJ1lwLf_4BzAg",
+"https://cdn2.videy.co/mRZ1Lm0Y1.mp4?fbclid=IwSU9FWAUY-ftwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHnwX8VlJMjazwUnDhlemwAx1uFGQ8XPIN7K31VLiYnhdGhlfHobOTGhhz0bg_aem_-Xi6WjfxGBeNZiUa9cdrQw",
+"https://cdn2.videy.co/ZwdCN9621.mp4?fbclid=IwSU9FWAUY-eBwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHibUzlNXwmawxJSlcYKT6qhyfQ6BBiMazN2Ues4yA6uCjwS7UEBYJ7ZWnaKv_aem_pYRjzoMdBJJ1lwLf_4BzAg",
+"https://cdn2.videy.co/rTERwuzM1.mp4?fbclid=IwSU9FWAUY-c9wZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHnwX8VlJMjazwUnDhlemwAx1uFGQ8XPIN7K31VLiYnhdGhlfHobOTGhhz0bg_aem_-Xi6WjfxGBeNZiUa9cdrQw",
+"https://cdn2.videy.co/VNDBFNBT1.mp4?fbclid=IwSU9FWAUY-pBwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHlYbtYZBhEh85nzshKka35oPia0b7gy2s78Ef1xWunVaV6bdSG7hEor-fySr_aem_CCPZqBK3xpNa_gBbQNFHfQ",
+"https://cdn.aceimg.com/689pE9dJu.mp4",
+"https://cdn.aceimg.com/EbhCaBWhK.mp4",
+"https://cdn.aceimg.com/psWGJcpkQ.mp4",
+"https://cdn.aceimg.com/X9Wz9YfAg.mp4",
+"https://cdn.aceimg.com/cQlm3KgQ6.mp4",
+"https://cdn.aceimg.com/QjqFxZAJ7.mp4",
+"https://cdn.aceimg.com/ekUQIidbV.mp4",
+"https://cdn.aceimg.com/9e373b38f.mp4",
+"https://cdn.aceimg.com/kUDcvvmff.mp4",
+"https://cdn.aceimg.com/JRgzCpb8q.mp4",
+"https://cdn.aceimg.com/zH7425xOl.mp4",
+"https://cdn.aceimg.com/oiijiyxXm.mp4",
+"https://cdn.aceimg.com/plzIhbF59.mp4",
+"https://cdn.aceimg.com/x92TSAekK.mp4",
+"https://cdn.aceimg.com/PApiu0PQV.mp4",
+"https://cdn.aceimg.com/mOopwVR9E.mp4",
+"https://cdn.aceimg.com/CMydotC8V.mp4",
+"https://cdn.aceimg.com/tNxf3HUdN.mp4",
+"https://cdn.aceimg.com/X5Ge0WbZb.mp4",
+"https://cdn.aceimg.com/Rnv8bg0kW.mp4",
+"https://cdn.aceimg.com/CXkllQ0hu.mp4",
+"https://cdn.aceimg.com/26UE002XM.mp4"
+];
 
 
 // ==========================================
-// 2. LOGIKA URL & PEMUNCULAN VIDEO
+// 2. PILIH VIDEO ACAK
 // ==========================================
-const urlParams = new URLSearchParams(window.location.search);
-const idVideoDicari = urlParams.get("id");
+
+const videoAcak =
+    daftarVideo[Math.floor(Math.random() * daftarVideo.length)];
+
+
+// ==========================================
+// 3. TAMPILKAN VIDEO
+// ==========================================
+
 const wadahVideo = document.getElementById("tempat-video");
 
-if (idVideoDicari && daftarVideo[idVideoDicari]) {
-
-    // Memunculkan video
-    const linkVideo = daftarVideo[idVideoDicari];
+if (wadahVideo) {
 
     wadahVideo.innerHTML = `
         <video id="video" controls playsinline>
-            <source src="${linkVideo}" type="video/mp4">
+            <source src="${videoAcak}" type="video/mp4">
+            Browser kamu tidak mendukung video.
         </video>
     `;
 
-    const video = document.getElementById("video");
-    const overlay = document.getElementById("videoOverlay");
-
-
-    // ==========================================
-    // 3. TIGA TUJUAN OVERLAY
-    // ==========================================
-
-    let tahapOverlay = 1;
-
-    // Ganti dengan tujuan yang sesuai
-    const linkTujuan1 = "https://s.shopee.co.id/1VynwISeTQ";
-    const linkTujuan2 = "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9";
-    const linkTujuan3 = "https://demolishwrestconclusions.com/diw3sapmi1?key=40a4713aac8d0bad2226bdabed9a8037";
-
-
-    // ==========================================
-    // 4. OVERLAY MUNCUL SAAT VIDEO DIMULAI
-    // ==========================================
-
-    video.addEventListener("play", () => {
-
-        if (!overlay.classList.contains("sudah-selesai")) {
-            overlay.classList.add("show");
-        }
-
-    }, { once: true });
-
-
-    // ==========================================
-    // 5. LOGIKA KLIK OVERLAY
-    // ==========================================
-
-    overlay.addEventListener("click", () => {
-
-        overlay.classList.remove("show");
-
-
-        // --------------------------------------
-        // KLIK PERTAMA
-        // --------------------------------------
-
-        if (tahapOverlay === 1) {
-
-            window.open(linkTujuan1, "_blank");
-
-            tahapOverlay = 2;
-
-            setTimeout(() => {
-                overlay.classList.add("show");
-            }, 1000);
-
-        }
-
-
-        // --------------------------------------
-        // KLIK KEDUA
-        // --------------------------------------
-
-        else if (tahapOverlay === 2) {
-
-            window.open(linkTujuan2, "_blank");
-
-            tahapOverlay = 3;
-
-            setTimeout(() => {
-                overlay.classList.add("show");
-            }, 1000);
-
-        }
-
-
-        // --------------------------------------
-        // KLIK KETIGA
-        // --------------------------------------
-
-        else if (tahapOverlay === 3) {
-
-            window.open(linkTujuan3, "_blank");
-
-            overlay.classList.add("sudah-selesai");
-            overlay.style.display = "none";
-
-        }
-
-    });
-
-
-} else {
-
-    // ==========================================
-    // 6. ID VIDEO TIDAK VALID
-    // ==========================================
-
-    wadahVideo.innerHTML = `
-        <h3 style="
-            color:white;
-            text-align:center;
-            padding:20px;
-        ">
-            Akses ditolak. Buka melalui link resmi.
-        </h3>
-    `;
 }
 
 
 // ==========================================
-// 7. TOMBOL SHARE
+// 4. SHARE
 // ==========================================
 
 const shareBtn = document.getElementById("shareBtn");
@@ -154,7 +76,7 @@ if (shareBtn) {
     shareBtn.onclick = () => {
 
         window.open(
-            "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9",
+            "https://s.shopee.co.id/1qc6pmzZHW",
             "_blank"
         );
 
@@ -164,13 +86,13 @@ if (shareBtn) {
 
 
 // ==========================================
-// 8. WHATSAPP
+// 5. WHATSAPP
 // ==========================================
 
 function joinWhatsAppGroup() {
 
     window.open(
-        "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9",
+        "https://s.shopee.co.id/1qc6pmzZHW",
         "_blank"
     );
 
@@ -178,14 +100,93 @@ function joinWhatsAppGroup() {
 
 
 // ==========================================
-// 9. FACEBOOK
+// 6. FACEBOOK
 // ==========================================
 
 function openFacebookPage() {
 
     window.open(
-        "https://www.profitableratecpmnetwork.com/i5rc74jug?key=8e34410ab1e30c8e8eb5bc0db939b6c9",
+        "https://s.shopee.co.id/1qc6pmzZHW",
         "_blank"
     );
+
+}
+
+
+// ==========================================
+// 7. LINK DETIK 1 SETELAH PLAY
+// ==========================================
+
+const video = document.getElementById("video");
+
+if (video) {
+
+    let sudahMulai = false;
+
+    video.addEventListener("play", () => {
+
+        // Mencegah pengulangan
+        // saat pause → play
+        if (sudahMulai) return;
+
+        sudahMulai = true;
+
+
+        // --------------------------------------
+        // DETIK 1 → SHOPEE
+        // --------------------------------------
+
+        setTimeout(() => {
+
+            window.open(
+                "https://s.shopee.co.id/1qc6pmzZHW",
+                "_blank"
+            );
+
+        }, 1000);
+
+    });
+
+
+// ==========================================
+// 8. SETELAH VIDEO MENCAPAI DETIK 5
+// ==========================================
+
+    let sudah5Detik = false;
+    let sudahKlik = false;
+
+
+    video.addEventListener("timeupdate", () => {
+
+        if (video.currentTime >= 1) {
+
+            sudah5Detik = true;
+
+        }
+
+    });
+
+
+// ==========================================
+// 9. KLIK APA PUN SETELAH VIDEO 5 DETIK
+// ==========================================
+
+    window.addEventListener("pointerdown", () => {
+
+        // Belum mencapai 5 detik
+        if (!sudah5Detik) return;
+
+        // Sudah pernah membuka Shopee
+        if (sudahKlik) return;
+
+        sudahKlik = true;
+
+        // Klik / tap apa pun → Shopee
+        window.open(
+            "https://s.shopee.co.id/1qc6pmzZHW",
+            "_blank"
+        );
+
+    }, true);
 
 }
